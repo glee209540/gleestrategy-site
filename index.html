@@ -3,24 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>G. Lee Resources — Fractional Leadership for Nonprofit &amp; Healthcare Organizations</title>
-<meta name="description" content="Fractional leadership, board training, and federal research compliance support for nonprofit and healthcare organizations.">
+<title>G. Lee Resources — Board Training &amp; Board–Staff Support for Nonprofit &amp; Healthcare Organizations</title>
+<meta name="description" content="Board training and one-on-one board support for executive directors and senior staff at nonprofit and healthcare organizations.">
 
 <!-- Favicon: the designed G. Lee Resources monogram -->
-<link rel="icon" type="image/svg+xml" href="gl-logo-banner.svg">
-<link rel="apple-touch-icon" href="gl-logo-banner.svg">
+<link rel="icon" type="image/svg+xml" href="gl-logo-monogram.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
 <!-- Open Graph: controls the preview card when this link is shared (text, email, social) -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="G. Lee Resources — Fractional Leadership &amp; Mentoring">
-<meta property="og:description" content="Fractional leadership, board training, and federal research compliance support for nonprofit and healthcare organizations in transition.">
+<meta property="og:title" content="G. Lee Resources — Board Training &amp; Board–Staff Support">
+<meta property="og:description" content="Board training and one-on-one board support for executive directors and senior staff at nonprofit and healthcare organizations.">
 <meta property="og:url" content="https://gleestrategy.com">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="G. Lee Resources — Fractional Leadership &amp; Mentoring">
-<meta name="twitter:description" content="Fractional leadership, board training, and federal research compliance support for nonprofit and healthcare organizations in transition.">
+<meta name="twitter:title" content="G. Lee Resources — Board Training &amp; Board–Staff Support">
+<meta name="twitter:description" content="Board training and one-on-one board support for executive directors and senior staff at nonprofit and healthcare organizations.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
     --ink:#201d1a;
@@ -29,33 +29,27 @@
     --warm-gray:#efece4;
     --warm-gray-line:#d8d3c7;
     --rule:#201d1a;
-    --blue:#1d5fd6;
+    --blue:#1652a8;
     --teal:#12b6a0;
+    --navy:#1b2f5e;
+    --bg:#f4f6f9;
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{
     margin:0;
-    background:var(--paper);
+    background:var(--bg);
     color:var(--ink);
-    font-family:'Work Sans',sans-serif;
-    font-size:17px;
+    font-family:'Source Sans 3','Segoe UI',Arial,sans-serif;
+    font-size:18px;
     line-height:1.6;
     -webkit-font-smoothing:antialiased;
   }
   h1,h2,h3{
-    font-family:'Big Shoulders Display',sans-serif;
-    text-transform:uppercase;
-    letter-spacing:0.01em;
+    font-family:'Lora',Georgia,serif;
+    letter-spacing:0;
     margin:0;
     color:var(--ink);
-  }
-  .ref{
-    font-family:'Space Mono',monospace;
-    font-size:0.78rem;
-    letter-spacing:0.06em;
-    color:var(--ink-soft);
-    text-transform:uppercase;
   }
   a{color:inherit;}
   .wrap{
@@ -63,42 +57,47 @@
     margin:0 auto;
     padding:0 28px;
   }
-  /* ---- Top banner ---- */
+  /* ---- Top banner (logo + name enlarged) ---- */
   .banner{
-    background:var(--paper);
-    padding:28px 0;
+    background:var(--bg);
+    padding:36px 0;
     border-bottom:1px solid var(--warm-gray-line);
   }
   .banner .wrap{
     display:flex;
     align-items:center;
-    gap:16px;
+    gap:24px;
   }
   .banner-logo{
-    height:50px;
+    height:108px;
     width:auto;
     display:block;
     flex:none;
   }
   .wordmark-text{
     display:block;
-    font-family:'Big Shoulders Display',sans-serif;
-    font-weight:700;
-    font-size:1.6rem;
-    letter-spacing:0.04em;
-    color:var(--ink);
+    font-family:'Lora',Georgia,serif;
+    font-weight:600;
+    font-size:clamp(1.5rem, 3.6vw, 2.3rem);
+    line-height:1.1;
+    letter-spacing:0.12em;
     text-transform:uppercase;
-  }
-  .wordmark-text .accent{
-    color:var(--blue);
+    color:var(--navy);
   }
   .wordmark-rule{
     display:block;
     width:64px;
-    height:5px;
-    border-radius:3px;
+    height:4px;
     background:var(--teal);
-    margin-top:9px;
+    margin:12px 0 10px;
+  }
+  .wordmark-sub{
+    display:block;
+    font-family:'Lora',Georgia,serif;
+    font-size:clamp(0.72rem, 1.5vw, 0.95rem);
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
   }
   /* ---- Hero ---- */
   .hero{
@@ -106,33 +105,26 @@
     border-bottom:1px solid var(--warm-gray-line);
   }
   .hero h1{
-    font-size:clamp(1.9rem, 4vw, 3rem);
-    line-height:1.08;
-    font-weight:700;
-    letter-spacing:-0.005em;
-    max-width:none;
-    white-space:nowrap;
+    font-size:clamp(1.9rem, 4vw, 2.8rem);
+    line-height:1.15;
+    font-weight:600;
+    letter-spacing:-0.01em;
+    max-width:24ch;
   }
   .hero .hero-tagline{
-    font-family:'Big Shoulders Display',sans-serif;
-    text-transform:uppercase;
-    font-size:clamp(1.05rem, 1.8vw, 1.35rem);
-    font-weight:600;
-    letter-spacing:0.01em;
+    font-family:'Source Sans 3','Segoe UI',Arial,sans-serif;
+    font-size:clamp(1.1rem, 1.8vw, 1.3rem);
+    font-weight:500;
+    letter-spacing:0;
     line-height:1.2;
     color:var(--blue);
-    max-width:none;
-    white-space:nowrap;
-    margin:10px 0 0;
+    margin:14px 0 0;
   }
   .hero .subhead{
     margin-top:26px;
     max-width:52ch;
     font-size:1.1rem;
     color:var(--ink-soft);
-  }
-  .hero .cta-row{
-    margin-top:40px;
   }
   .hero-contact{
     margin-top:40px;
@@ -142,42 +134,22 @@
   }
   .hero-contact-label{
     display:block;
-    font-family:'Big Shoulders Display',sans-serif;
-    text-transform:uppercase;
-    font-weight:700;
-    font-size:clamp(1.2rem, 2vw, 1.5rem);
-    letter-spacing:0.02em;
+    font-family:'Lora',Georgia,serif;
+    font-weight:600;
+    font-size:clamp(1.15rem, 2vw, 1.35rem);
+    letter-spacing:0;
     color:var(--ink);
     margin-bottom:6px;
   }
   .hero-contact-email{
     display:inline-block;
-    font-family:'Work Sans',sans-serif;
+    font-family:'Source Sans 3','Segoe UI',Arial,sans-serif;
     font-weight:600;
     font-size:1.2rem;
     color:var(--blue);
     text-decoration:underline;
     text-underline-offset:4px;
     text-decoration-thickness:1.5px;
-  }
-  /* ---- Buttons ---- */
-  .btn{
-    display:inline-block;
-    padding:14px 34px;
-    border:1.5px solid var(--ink);
-    border-radius:999px;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:'Work Sans',sans-serif;
-    font-weight:600;
-    font-size:0.95rem;
-    letter-spacing:0.02em;
-    text-decoration:none;
-    transition:background 0.15s ease, color 0.15s ease;
-  }
-  .btn:hover{
-    background:var(--ink);
-    color:var(--paper);
   }
   /* ---- Section shell ---- */
   section{
@@ -197,12 +169,10 @@
     padding-bottom:14px;
   }
   #services .section-head{border-bottom-color:var(--teal);}
-  #credentials .section-head{border-bottom-color:var(--blue);}
-  .section-head .ref{white-space:nowrap;}
   .section-head h2{font-size:1.6rem; font-weight:600;}
   .byline{
     display:block;
-    font-family:'Work Sans',sans-serif;
+    font-family:'Source Sans 3','Segoe UI',Arial,sans-serif;
     font-size:0.82rem;
     font-weight:600;
     letter-spacing:0.08em;
@@ -210,16 +180,10 @@
     color:var(--blue);
     margin-bottom:8px;
   }
-  /* ---- Intro ---- */
-  .intro p{
-    font-size:1.15rem;
-    max-width:62ch;
-    color:var(--ink-soft);
-  }
   #services{
-    background:#f4f9ff;
-    border-top:1px solid #dbe6f5;
-    border-bottom:1px solid #dbe6f5;
+    background:#e9eef4;
+    border-top:1px solid #d6dee8;
+    border-bottom:1px solid #d6dee8;
   }
   .service{
     background:var(--paper);
@@ -231,8 +195,6 @@
   }
   .service:last-child{margin-bottom:0;}
   .service.accent-teal{border-left-color:var(--teal);}
-  .service.accent-ink{border-left-color:var(--ink);}
-  .service .ref{padding-top:4px;}
   .service h3{
     font-size:1.35rem;
     font-weight:600;
@@ -243,55 +205,30 @@
     color:var(--ink-soft);
     max-width:60ch;
   }
-  /* ---- Credentials dossier ---- */
-  .dossier{
-    position:relative;
-    border:1.5px solid var(--teal);
-    background:#e6f6f3;
-  }
-  .dossier-tab{
-    position:absolute;
-    top:-17px;
-    left:24px;
-    background:var(--ink);
-    color:var(--paper);
-    font-family:'Space Mono',monospace;
-    font-size:0.72rem;
-    letter-spacing:0.1em;
-    padding:5px 14px;
-    text-transform:uppercase;
-  }
-  .credential-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-  }
-  .credential-cell{
-    display:flex;
-    gap:14px;
-    align-items:baseline;
-    padding:24px 26px;
-    border-bottom:1px solid #b9ded8;
-  }
-  .credential-cell:nth-child(odd){
-    border-right:1px solid #b9ded8;
-  }
-  .credential-cell:nth-last-child(-n+2){
-    border-bottom:none;
-  }
-  .credential-cell .num{
-    font-family:'Space Mono',monospace;
-    font-size:0.95rem;
+  .service p + p{margin-top:14px;}
+  .service ul{
+    margin:12px 0 14px;
+    padding-left:1.2em;
     color:var(--ink-soft);
-    flex:none;
+    max-width:60ch;
   }
-  .credential-cell .item{
-    font-size:1rem;
-    line-height:1.45;
+  .service li{margin-bottom:4px;}
+  /* ---- About (quiet, no box) ---- */
+  .about{
+    padding:56px 0;
   }
-  /* ---- Ledger (legacy, unused) ---- */
+  .about h2{
+    font-size:1.2rem;
+    font-weight:600;
+    margin-bottom:12px;
+  }
+  .about p{
+    margin:0;
+    max-width:62ch;
+    color:var(--ink-soft);
+  }
   /* ---- Closing ---- */
   .closing{
-    text-align:left;
     padding-top:74px;
     padding-bottom:74px;
   }
@@ -313,7 +250,7 @@
     margin-bottom:14px;
   }
   footer .email{
-    font-family:'Work Sans',sans-serif;
+    font-family:'Source Sans 3','Segoe UI',Arial,sans-serif;
     font-weight:600;
     font-size:1.1rem;
     color:var(--teal);
@@ -324,15 +261,14 @@
     font-size:0.92rem;
   }
   @media (max-width:600px){
-    .banner-logo{height:38px;}
+    .banner{padding:26px 0;}
+    .banner .wrap{gap:16px;}
+    .banner-logo{height:72px;}
+    .wordmark-text{font-size:1.15rem; letter-spacing:0.1em;}
+    .wordmark-rule{width:48px; height:3px; margin:8px 0 7px;}
+    .wordmark-sub{font-size:0.62rem; letter-spacing:0.16em;}
     .hero{padding:44px 0 60px;}
-    .hero h1{white-space:normal; font-size:1.9rem;}
-    .hero .hero-tagline{white-space:normal;}
-    .service{grid-template-columns:1fr;}
-    .credential-grid{grid-template-columns:1fr;}
-    .credential-cell:nth-child(odd){border-right:none;}
-    .credential-cell{border-bottom:1px solid #b9ded8 !important;}
-    .credential-cell:last-child{border-bottom:none !important;}
+    .hero h1{font-size:1.8rem;}
   }
   :focus-visible{
     outline:2px solid var(--ink);
@@ -340,7 +276,6 @@
   }
   @media (prefers-reduced-motion: reduce){
     html{scroll-behavior:auto;}
-    .btn{transition:none;}
   }
 </style>
 </head>
@@ -348,19 +283,20 @@
 
   <div class="banner">
     <div class="wrap">
-      <img class="banner-logo" src="gl-logo-banner.svg" alt="G. Lee Resources logo">
       <div>
-        <span class="wordmark-text">G. Lee <span class="accent">Resources</span></span>
+        <span class="wordmark-text">G. Lee Resources</span>
         <span class="wordmark-rule"></span>
+        <span class="wordmark-sub">Board Training &amp; Advisory</span>
       </div>
+      <img class="banner-logo" src="gl-logo-monogram.svg" alt="G. Lee Resources monogram">
     </div>
   </div>
 
   <section class="hero">
     <div class="wrap">
-      <h1>Fractional Leadership and Mentoring</h1>
-      <p class="hero-tagline">for Nonprofit &amp; Healthcare Organizations in Transition.</p>
-      <p class="subhead">Whether your organization needs a steady hand for a season or a long-term thought partner, G. Lee Resources offers experienced, hands-on support, grounded in decades of nonprofit executive leadership.</p>
+      <h1>Stronger Boards. Better Board–Staff Partnerships.</h1>
+      <p class="hero-tagline">Board training and support for nonprofit &amp; healthcare leaders</p>
+      <p class="subhead">I help boards understand their role, and I help senior staff work effectively with their boards, so meetings lead to decisions instead of frustration.</p>
       <div class="hero-contact">
         <span class="hero-contact-label">Contact Me For More Information</span>
         <a class="hero-contact-email" href="mailto:gayle@gleestrategy.com">gayle@gleestrategy.com</a>
@@ -374,57 +310,35 @@
         <h2>Services</h2>
       </div>
 
-      <div class="service">
-        <div>
-          <h3>Fractional Leadership</h3>
-          <p>Organizations in transition need more than a placeholder. They need someone who can assess quickly and lead effectively. Drawing on decades of nonprofit leadership at the executive level, I step into a position to evaluate its needs, review the board's program standards, and listen closely to staff before crafting solutions. From there, I help train and mentor the incoming leader, so the transition strengthens the organization rather than stalling it.</p>
-        </div>
-      </div>
-
       <div class="service accent-teal">
-        <div>
-          <h3>Board Training</h3>
-          <p>Many boards struggle to find their collective voice, or to know how to interpret and act on the information presented at meetings. I offer facilitated sessions designed to help board members better understand their roles, ask questions they may hesitate to raise in a formal meeting, and recognize the distinct value each of them brings to the table.</p>
-        </div>
+        <h3>Board Training</h3>
+        <p>Many boards struggle to find their collective voice or to know how to read and act on what's presented at meetings. My facilitated sessions help board members understand their roles and responsibilities, ask the questions they may hesitate to raise in a formal meeting, and recognize the distinct value each person brings to the table.</p>
       </div>
 
-      <div class="service accent-ink">
-        <div>
-          <h3>Federal &amp; Sponsored Research Program Assistance</h3>
-          <p>Securing federal grants from DoD, NIH, HHS, and other agencies is only the first step. Tracking, reporting, and maintaining required standard operating procedures before and after funds are accepted is where many organizations run into trouble. I help resolve existing compliance issues and mentor leadership through the process, so funding becomes an asset, not a liability.</p>
-        </div>
+      <div class="service">
+        <h3>Board Support for Executive Directors and Senior Staff</h3>
+        <p>Working with a board is one of the least-taught parts of an executive's job. I work one-on-one with executive directors and senior staff on board situations that are hard to talk through inside the organization, such as:</p>
+        <ul>
+          <li>preparing reports and materials the board will actually use</li>
+          <li>working with a board that oversteps, or one that has disengaged</li>
+          <li>adjusting to a new board chair</li>
+          <li>getting ready for a difficult meeting</li>
+        </ul>
+        <p>The goal is a working relationship that serves the mission, not one side over the other.</p>
       </div>
     </div>
   </section>
 
-  <section class="alt" id="credentials">
+  <section class="about" id="about">
     <div class="wrap">
-      <div class="section-head">
-        <div>
-          <span class="byline">Gayle Lee, Mentor</span>
-          <h2>My Experience</h2>
-        </div>
-      </div>
-      <div class="dossier">
-        <div class="credential-grid">
-          <div class="credential-cell"><span class="item">Managed millions of dollars in DoD, NIH, and HHS federal research grants</span></div>
-          <div class="credential-cell"><span class="item">Certified Fund Raising Executive (CFRE)</span></div>
-          <div class="credential-cell"><span class="item">Helped more than 40 nonprofits obtain 501(c)(3) designation</span></div>
-          <div class="credential-cell"><span class="item">Executive Director and CEO experience across nonprofit and research organizations</span></div>
-          <div class="credential-cell"><span class="item">HR and staff management</span></div>
-          <div class="credential-cell"><span class="item">Board training and governance support</span></div>
-          <div class="credential-cell"><span class="item">IRB and Human Research Protections Program oversight</span></div>
-          <div class="credential-cell"><span class="item">Research compliance — federal, state, and institutional</span></div>
-          <div class="credential-cell"><span class="item">Change management</span></div>
-          <div class="credential-cell"><span class="item">Strategic translation — turning complex regulatory and operational realities into actionable plans</span></div>
-        </div>
-      </div>
+      <h2>About Gayle Lee</h2>
+      <p>I've served as executive director and CEO in nonprofit and research organizations, provided board training and governance support, and helped more than 40 nonprofits obtain 501(c)(3) designation. I've also served on local and national boards of directors, so I know the board relationship from both sides of the table: as the staff leader reporting to a board, and as a board member. I know how much smoother an organization runs when that relationship is working.</p>
     </div>
   </section>
 
   <section class="closing">
     <div class="wrap">
-      <p>G. Lee Resources offers both short-term, project-based engagements and longer-term advisory relationships, tailored to what your organization needs right now.</p>
+      <p>Engagements range from a single board session to a training series to ongoing advisory support for executive leadership, depending on what your organization needs.</p>
     </div>
   </section>
 
@@ -432,7 +346,7 @@
     <div class="wrap">
       <h2>Contact Me For More Information</h2>
       <a class="email" href="mailto:gayle@gleestrategy.com">gayle@gleestrategy.com</a>
-      <p class="fine">G. Lee Resources — fractional leadership for nonprofit &amp; healthcare organizations.</p>
+      <p class="fine">G. Lee Resources: board training and board–staff support for nonprofit &amp; healthcare organizations.</p>
     </div>
   </footer>
 
